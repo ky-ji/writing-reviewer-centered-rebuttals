@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reviewer-Centered Rebuttals"
+  short_description: "Draft, micro-edit, and harmonize reviewer responses"
+  default_prompt: "Use $writing-reviewer-centered-rebuttals to improve this rebuttal and keep terminology, numbers, openings, and closings consistent across reviewers."
