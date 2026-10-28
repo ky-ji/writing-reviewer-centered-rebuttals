@@ -1,211 +1,109 @@
-# Author Playbook: Reviewer-Centered Rebuttals
+# Author Playbook for Reviewer-Centered Rebuttals
 
-## Contents
+## 1. Choose the work that serves the request
 
-1. Choose the editing mode
-2. Map reviewer concerns
-3. Build answer units
-4. Shape reviewer-level openings
-5. Shape answer openings and closings
-6. State revisions concretely
-7. Compress without flattening
-8. Harmonize across reviewers
-9. Write AC/meta-review summaries
-10. Make bounded micro-edits
+Use the current draft and evidence designated by the user. Match the edit to its purpose.
 
-## 1. Choose the editing mode
+- **Draft** turns concerns and supplied material into an argument.
+- **Restructure** changes the order while preserving substance.
+- **Compress** keeps coverage and decisive evidence within a budget.
+- **Micro-edit** changes only the specified sentences or boundaries.
+- **Consistency pass** aligns reviewer sections and repeated facts.
 
-Name the task before editing:
+Carry forward the requested language, quotation convention, template, and editable span. For prose work, focus on explaining the supplied results. If a visible conflict changes the answer, identify the specific comparison or value that needs resolution and continue the independent edits.
 
-- **Draft:** turn reviewer concerns and supplied material into responses.
-- **Restructure:** preserve substance while changing order and hierarchy.
-- **Compress:** retain coverage and decisive content within a tighter budget.
-- **Micro-edit:** change only specified sentences or boundaries.
-- **Consistency pass:** compare reviewer sections without reopening their scientific content.
+## 2. Find the question that matters
 
-Treat the user's designated draft as authoritative. During a writing or consistency pass, do not independently reopen paper claims, experiment protocols, seeds, confidence intervals, null results, or limitations. Do that only when the user explicitly requests scientific verification.
+Separate each review into atomic concerns, then ask what would resolve the underlying doubt. A request for more comparisons may concern novelty, compatibility, or fairness. A request for a control may concern which component causes the reported improvement. Use the reviewer's words to choose the relevant interpretation.
 
-Before editing, record:
+A private map can keep the argument focused.
 
-- files and sections that may change;
-- language and formatting convention;
-- whether reviewer quotations are fixed;
-- whether the work is prose-only or includes scientific verification.
-
-## 2. Map reviewer concerns
-
-Split each review into atomic concerns. A useful private map has four columns:
-
-| Reviewer concern | Direct answer | Supplied support | Revision, if any |
+| Concern and original label | Direct answer | Decisive supplied support | Meaning or revision |
 |---|---|---|---|
-| What blocks the reviewer? | What should they know first? | Which result or clarification answers it? | What exactly changes in the manuscript? |
+| What needs to be resolved? | What should the reader know first? | Which result or explanation answers it? | Why does it resolve this concern, and what changes? |
 
-Keep weakness-before-question order when the draft already uses `W/Q/A`. Merge two items only when one answer truly resolves both and both concern labels remain easy to locate.
+Give the clearest answer and most space to concerns that affect the assessment of the contribution. Preserve the existing W/Q order when requested. Merge related items when one argument answers them together, and retain every original label so coverage stays visible.
 
-Prioritize by likely decision impact:
+## 3. Build a complete argument
 
-1. central novelty or validity concern;
-2. missing comparison or requested analysis;
-3. ambiguity that changes interpretation;
-4. presentation or wording issue.
+A useful answer often follows this progression.
 
-This ranking controls space, not truth. The most important concern gets the clearest direct answer and the most visible result.
+1. State the answer or conclusion in ordinary language.
+2. Explain the mechanism or distinction needed to understand it.
+3. Give the strongest relevant result or clarification.
+4. Say what that evidence establishes for this concern.
+5. State a concrete manuscript change when it adds value.
 
-## 3. Build answer units
+Adapt the progression to the question. A yes/no question can start with `Yes.` and the substantive answer. A design question may need one sentence of purpose before its evidence. A short correction may need only an acknowledgment and the exact change.
 
-A full answer unit can contain:
+For a mechanism concern, connect what information is available, how the method uses it, and what changes in the outcome. Put model names, setup details, and formulas after the reader understands their role.
 
-1. a plain-language heading;
-2. the reviewer excerpt;
-3. a direct answer;
-4. one sentence of purpose or context;
-5. the decisive supplied result;
-6. the implication for this concern;
-7. a specific manuscript revision.
+For novelty or design rationale, state the positive contribution and the useful distinction from prior work. Support that distinction with the relevant comparison. Explain why an interface, assumption, or system choice matters to the intended use.
 
-Use only the pieces that help. A compact response may need just answer → result → implication.
+For a fairness concern, name the conditions that are shared and the cost that is included. Explain which question the comparison answers. A controlled component comparison and an end-to-end deployment comparison can support complementary points. Keep each result attached to its actual setting.
 
-Prefer this information order:
+For a request about completed additions, summarize what has been added and give the key finding. Keep technical detail proportional to what the reviewer asked.
 
-> **Answer first.** What changed or what the authors conclude.
->
-> **Result next.** The number, comparison, or clarification that carries the answer.
->
-> **Meaning last.** Why that result addresses this reviewer concern.
+## 4. Write for both the reviewer and the AC
 
-Avoid beginning with experimental plumbing when the conclusion can orient the reader first. Explain task, baseline, metric, or perturbation in ordinary language before internal names.
+Each reviewer reply should make sense on its own. Include enough context to identify the issue and interpret its decisive result. A section number can help locate detail after the explanation.
 
-Preserve the user's chosen strength of claim. Editing should clarify a conclusion, not automatically replace `demonstrates` with `suggests`, insert unsolicited qualifications, or add a limitation paragraph.
+Across replies, repeat a headline result when it answers another reviewer's concern. Keep the value, comparison, unit, and interpretation aligned. Within one answer, remove repeated setup and conclusions.
 
-## 4. Shape reviewer-level openings
+For an AC or meta-review response, organize around the concerns that matter to the assessment. Give the contribution, the most consequential resolved questions, their headline evidence, and the detailed reply locations when useful. Present a readable argument rather than a chronological account of the authors' work.
 
-The reviewer-level opening should do two jobs:
+## 5. Use titles and openings to orient the reader
 
-- thank the reviewer in a way connected to their actual focus;
-- preview the one or two themes that organize the response.
+A response title should summarize what the reply contributes, such as an added control, expanded comparison, or clarified design. Prefer a concrete title over a generic promise to clarify everything. Keep its length proportionate to the document.
 
-Keep openings proportionate across reviewers. One reviewer should not receive four stacked gratitude phrases while another gets a bare `Thank you` unless the user intentionally wants that contrast.
+Keep the reviewer-level opening brief. Connect gratitude to a contribution or issue the reviewer actually recognized. A short preview is useful when it adds orientation beyond the title and first answer.
 
-A useful pattern is:
+```text
+Dear reviewer, thank you for recognizing the practical motivation and systems design.
+```
 
-> We thank the reviewer for highlighting **[specific theme]**. Below we clarify **[issue 1]** and report **[issue 2/result]**.
+Use `Dear reviewer` when it fits the established template. Match the warmth and length across reviewers while preserving their individual focus.
 
-Do not copy the same concern inventory into the first answer. The reviewer-level opening frames the section; the answer opening resolves its local concern.
+An answer heading should name its topic in plain language. Keep original concern labels and omit a trailing colon. Use the chosen connector consistently when grouping labels, for example `W1 & Q2`.
 
-## 5. Shape answer openings and closings
+## 6. Keep the voice confident and constructive
 
-### Openings
+Let the reasoning and evidence carry the response. Explain the method's purpose, the relevant distinction, and the observed result directly. Replace remarks about what a reviewer misunderstood with the explanation they need.
 
-Give adjacent answers different rhetorical jobs:
+When a correction is warranted, acknowledge it briefly and state the specific action. When a limitation or uncertainty is central to the question, explain it accurately alongside the result and its implication. Keep these statements tied to the concern. Remove automatic apologies, generic limitation appendices, and self-protective commentary that add no information.
 
-- direct conclusion;
-- clarification of a misunderstanding;
-- newly added comparison;
-- explanation of design intent;
-- acknowledgment of a requested revision.
+Maintain supported claim strength. Polishing should make the conclusion clearer. Preserve the distinction between demonstrated effects, associations, unresolved values, and future work.
 
-Variation should come from function, not decorative synonym swaps. Read all first sentences side by side.
+## 7. End with meaning or a concrete change
 
-### Closings
+Choose the ending that advances the local argument.
 
-Choose one closing job:
+- Explain why the decisive result answers this concern.
+- State the manuscript object and the action that will change it.
+- Point to a distinct complementary answer when useful.
 
-- interpret the decisive result;
-- connect the answer to the reviewer's concern;
-- state the exact manuscript revision;
-- bridge to a separate answer when necessary.
+```text
+We will add the comparison to Table 3 and explain the evaluation setting in its caption.
+```
 
-Not every answer needs a revision promise. If five answers all end with `We will...`, retain that form only where a real manuscript change is the main takeaway. Let the others end on meaning.
+Use an exact section number only when supplied. Keep completed work in the appropriate completed tense and future revisions as commitments. End on the finding when there is no useful revision to promise. Compare closings side by side to catch mechanical repetitions of `We will...`.
 
-Read closing sentences side by side. Check both repeated wording and repeated function.
+## 8. Compress for the actual submission format
 
-## 6. State revisions concretely
+Draft enough to establish the answer, then compress in this order.
 
-A useful revision sentence names an object and an action:
+1. Repeated thanks and generic transitions.
+2. Restatements of a concern already visible in its heading.
+3. Setup repeated within the same reply.
+4. Secondary detail that does not carry the conclusion.
+5. Unnecessary words within otherwise complete sentences.
 
-- `We will add this comparison to Table 3.`
-- `We will define the evaluation perturbations at the start of Sec. 4.2.`
-- `We will replace “X” with “Y” throughout the method section.`
+Protect the direct answer, decisive evidence, its meaning, and any useful revision. Keep at least one locatable answer for every concern. Match abbreviations and detail to the reader's ability to follow the argument.
 
-Avoid empty closures such as `We will revise accordingly.` If the location is not supplied, name the manuscript object without inventing a section number.
+Use the actual supplied limit and counting convention. Check the text that will be submitted, including any headings, greetings, spaces, and line breaks counted by that format. Preserve verbatim reviewer excerpts where the document calls for them. A separate reference layer can retain the reviews when the submission contains replies alone.
 
-Revision commitments belong where they answer the concern. Do not append one mechanically to every response.
+## 9. Harmonize without flattening
 
-## 7. Compress without flattening
+Create a small private ledger of canonical method names, metrics, units, averaging labels, and reference forms. Distinguish terms that refer to different objects. Compare the same boundary sentences across reviewers to align warmth and formatting while keeping each answer specific.
 
-Compress in this order:
-
-1. duplicate thanks;
-2. repeated restatements of the concern;
-3. setup already explained in the same answer;
-4. transitions with no new job;
-5. secondary detail that does not carry the conclusion.
-
-Protect:
-
-- one locatable response per concern;
-- the direct answer;
-- the decisive supplied result;
-- the concern-specific implication;
-- concrete revision language when promised.
-
-Do not make every reviewer section sound identical. Consistency means shared conventions, not erased reviewer specificity.
-
-## 8. Harmonize across reviewers
-
-Make a short canonicalization sheet before the final pass:
-
-| Category | Canonical form | Variants to replace or distinguish |
-|---|---|---|
-| Method/baseline | `Official GR00T-N1.6` | `Official`, `official checkpoint` |
-| Supervision target | chosen project term | `pseudo-label`, `mined target`, `RVM target` |
-| Difference unit | `percentage points` or `pp` | `%`, `points`, `pp` used for the same difference |
-| Figure reference | `Fig.` or `Figure` | mixed forms |
-| Answer label | one bolding convention | label-only versus whole-sentence bolding |
-
-Use the actual project terms; the table above illustrates the method, not mandatory wording.
-
-Compare reviewer sections along six axes:
-
-1. **Terminology:** same object, same name.
-2. **Numbers:** same value, same unit and precision.
-3. **Structure:** compatible W/Q/A order, heading depth, separators, tables, and quote style.
-4. **Openings:** comparable length, specificity, and warmth.
-5. **Closings:** balanced use of implication versus revision promises.
-6. **References:** consistent reviewer IDs, answer IDs, figure/table style, and manuscript object names.
-
-If variants represent genuinely different objects, add a one-time distinction rather than forcing one label.
-
-## 9. Write AC/meta-review summaries
-
-Use a neutral title such as `Response to the Meta-Review`. Organize the response by the meta-review's stated concerns, not by a chronological recap of the author process.
-
-For each concern, give:
-
-1. the conclusion;
-2. one headline supplied result or clarification;
-3. the detailed reviewer-answer location when available.
-
-The AC response should be a compact map to the substantive replies. Keep its terminology, numbers, and answer references aligned with the reviewer sections.
-
-## 10. Make bounded micro-edits
-
-For opening- or closing-only requests:
-
-1. mark the exact editable sentences;
-2. keep the body fixed;
-3. assign each new sentence one rhetorical job;
-4. compare it with the fixed sentence immediately before and after it;
-5. read the same boundary across all reviewer sections;
-6. inspect the diff to ensure nothing else changed.
-
-Common boundary problems:
-
-- the new opening repeats the next sentence's setup;
-- the new closing repeats the previous result;
-- reviewer-level thanks and the first answer use the same gratitude phrase;
-- every final sentence promises a revision;
-- one reviewer's opening is much warmer or longer than the others;
-- a local edit introduces a new alias for an existing method or metric.
-
-Fix the smallest span that removes the echo. Do not rewrite the entire answer when a one-sentence adjustment is enough.
+Use [micro-style-patterns.md](micro-style-patterns.md) for punctuation, sentence flow, and local edits. Use [final-audit.md](final-audit.md) for the final cross-review read.

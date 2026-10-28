@@ -1,35 +1,33 @@
 ---
 name: writing-reviewer-centered-rebuttals
-description: Use when triaging, drafting, restructuring, compressing, micro-editing, or harmonizing academic rebuttals, author responses, reviewer replies, or AC/meta-review comments—especially when responses are generic, repetitive, poorly mapped to reviewer concerns, or inconsistent across reviewers in terminology, numbers, headings, openings, or closings.
+description: Draft, restructure, compress, and polish academic rebuttals, reviewer replies, and AC responses. Use for concern-specific arguments, direct answers, readable prose, and consistency across reviewers, including bounded opening or closing edits.
 ---
 
 # Writing Reviewer-Centered Rebuttals
 
-Write for a reviewer who needs to recover the concern, see the answer, and understand why it matters without rereading the paper.
+Help the reviewer and a neutral AC understand the concern, the answer, and why the supplied evidence resolves it without rereading the paper. Make the contribution easy to assess through clear reasoning and concrete results.
 
-## Core contract
+## Writing approach
 
-- Follow the user's authoritative draft, source set, version, template, language, and edit boundary literally. Never invent results, settings, citations, reviewer intent, locations, or completed work.
-- Treat supplied claims and results as authoritative for writing work. Do not initiate paper/log/protocol verification, add caveats, or weaken conclusions unless the user explicitly asks for scientific validation or claim calibration.
-- When reviewer text is quoted, keep it verbatim unless the user asks for paraphrase.
-- Preserve the user's intended persuasive strength while making the reasoning easier to follow.
+- Start from the user's current draft, supplied evidence, requested language, template, and edit boundary. Keep results, comparison identities, units, quotations, and completed versus planned work accurate. Resolve a material source conflict locally or ask a focused question while continuing unaffected writing.
+- Lead with the substantive answer. Follow with the mechanism or distinction needed to understand it, the decisive result, and its meaning for this concern. Choose the pieces and order that make the argument clearest.
+- Write with calm confidence. Explain what the method achieves and how the evidence answers the question. Acknowledge a concrete correction directly. Include qualifications when they change the answer, and keep the author's supported persuasive strength.
+- Use complete, connected sentences. As this author's default, avoid colons and semicolons in newly written rebuttal prose and trailing colons in headings. Split the thought or connect it with an ordinary conjunction. Preserve verbatim reviewer quotations and technical syntax.
+- Keep each reviewer reply independently understandable. Repeat a decisive fact when another reviewer needs it, using the same name, value, unit, and interpretation.
 
 ## Workflow
 
-1. Read [references/author-playbook.md](references/author-playbook.md). For openings, closings, transitions, or sentence-level edits, also read [references/micro-style-patterns.md](references/micro-style-patterns.md). Lock the requested mode and mutation scope.
-2. Split each review into atomic concerns. For each concern, identify the direct answer, best supplied result or clarification, implication, and any promised manuscript change.
-3. Draft each unit as needed: plain heading → reviewer quote → direct answer → brief context → decisive result → concern-specific implication → concrete revision. Do not force every component when a shorter answer is clearer.
-4. Make openings reviewer-specific but proportionate. Vary answer openings by rhetorical job rather than swapping synonyms. End on the result's meaning or a specific revision; avoid mechanical chains of identical `We will...` closings.
-5. Read all reviewer sections side by side. Normalize canonical names, metric labels, units, percentage-versus-point notation, headings, answer-label styling, quote format, opening warmth, and closing rhythm. If two terms denote different objects, distinguish them once instead of flattening them.
-6. Compress after coverage is stable. Remove repeated setup, duplicated concern summaries, and empty transitions before removing reviewer-specific evidence.
-7. For a limited micro-edit, compare every new opening or closing with its fixed neighboring sentence so the edit does not echo information already present.
+1. Read [references/author-playbook.md](references/author-playbook.md) for argument design, concern mapping, compression, and AC responses. For local prose, punctuation, headings, or boundary edits, read [references/micro-style-patterns.md](references/micro-style-patterns.md).
+2. Identify the underlying question behind each review item. Map it to a direct answer, the strongest relevant supplied support, and any concrete manuscript change. Allocate space by decision impact and preserve locatable concern labels.
+3. Draft answer-first paragraphs. State the main distinction before method names or implementation details. Keep result and interpretation adjacent. Distinguish completed additions from future revisions.
+4. Use a brief, reviewer-specific opening. Make a response title summarize substantive additions or clarifications. Let individual answers end on their meaning or a useful revision, with varied sentence functions.
+5. Compress repeated setup, courtesy, and empty transitions before cutting evidence. Prefer readable sentences over slash-packed names, number strings, or undefined abbreviations. For a bounded edit, compare the changed sentence with both fixed neighbors and inspect the diff.
+6. Read reviewer sections side by side using [references/final-audit.md](references/final-audit.md). Align terminology, numbers, concern labels, formatting, openings, and closing rhythm. Check the actual submitted text against any supplied character or format limit.
 
-## Consistency check
-
-When the draft contains multiple reviewer sections, read [references/final-audit.md](references/final-audit.md) and optionally run:
+The optional helper finds presentation patterns in Markdown reviewer sections.
 
 ```bash
 python3 scripts/audit_rebuttal.py DRAFT.md
 ```
 
-The check is advisory and limited to cross-review consistency. It does not determine scientific correctness, evidence strength, protocol validity, quote fidelity, venue compliance, or submission readiness. Perform any broader audit only when the user requests it.
+Use its observations to guide a manual read. Match any broader scientific review or experiment work to the user's requested task.

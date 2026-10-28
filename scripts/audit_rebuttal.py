@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """Report cross-review presentation inconsistencies in a rebuttal draft.
 
-This helper is deliberately advisory. It compares reviewer sections for shared
-terminology, numeric notation, structure, openings, and closings; it does not
-verify scientific evidence, quotations, protocols, venue rules, or readiness.
+Compare reviewer sections for shared terminology, numeric notation, structure,
+openings, and closings. Use the observations to guide a side-by-side read.
 """
 
 from __future__ import annotations
@@ -83,7 +82,7 @@ def parse_args() -> argparse.Namespace:
         metavar="LABEL=TERM1|TERM2",
         help=(
             "Optional project-specific aliases to compare. Repeat for multiple concepts, "
-            "for example 'baseline=Official GR00T-N1.6|Official baseline'."
+            "for example 'baseline=Method A|Baseline A'."
         ),
     )
     parser.add_argument("--json", action="store_true", help="Emit machine-readable JSON")
@@ -413,10 +412,7 @@ def build_report(args: argparse.Namespace) -> dict[str, Any]:
         "scope": "cross-review consistency only",
         "profiles": profiles,
         "observations": observations,
-        "note": (
-            "Advisory presentation scan only; no evidence, protocol, quote, venue, "
-            "claim-strength, or submission-readiness checks were performed."
-        ),
+        "note": "Compare flagged presentation patterns in context before editing.",
     }
 
 

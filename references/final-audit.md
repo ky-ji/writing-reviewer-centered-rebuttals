@@ -1,90 +1,56 @@
-# Cross-Reviewer Consistency Check
+# Final Cross-Reviewer Read
 
-This is a narrow comparison pass across reviewer sections. It is not a scientific, evidentiary, venue, quote-fidelity, or submission-readiness audit.
+Compare the current reviewer replies side by side. Use this pass to make their arguments easy to follow and their presentation internally consistent.
 
-## Scope
+## Concern coverage and answer flow
 
-- Use the current rebuttal draft as the authoritative text.
-- Compare reviewer sections with one another.
-- Do not open the paper, raw reviews, experiment logs, code, or venue rules unless the user explicitly asks.
-- Do not reassess claim strength, protocols, seeds, uncertainty, negative results, limitations, or whether evidence is sufficient.
-- Do not add caveats or soften strong conclusions merely because they sound assertive.
+- Each original concern has a locatable answer, including labels retained in merged items.
+- The opening gives the answer or the distinction needed to understand it.
+- The decisive supplied result stays next to its interpretation.
+- Each reply includes enough context for a reviewer or AC to read it independently.
+- Completed additions and future revisions use accurate wording.
 
-## 1. Terminology
+## Terminology and numeric presentation
 
-Read the reviewer sections side by side and flag only cross-section mismatches:
+- One object has one canonical name, capitalization, and abbreviation.
+- Different objects remain distinguishable.
+- Repeated values retain the same comparison, unit, precision, and aggregation.
+- Rates and percentage-point differences retain their meaning.
+- Equivalent tables and number lists use compatible notation.
 
-- one method, baseline, dataset, target, metric, perturbation, or aggregation has multiple names;
-- capitalization or hyphenation changes for the same term;
-- an acronym is expanded differently;
-- a local edit introduces a new alias.
+When a visible contradiction affects the answer, identify the exact value or label for resolution and continue the independent edits. Match any broader scientific investigation to the task requested by the user.
 
-If two labels intentionally denote different objects, preserve both and add a one-time distinction if needed.
+## Headings, punctuation, and references
 
-## 2. Numbers and units
+- Reviewer and answer headings follow a shared hierarchy and label convention.
+- Titles summarize substantive additions or clarifications.
+- New rebuttal prose follows the author's default of no colons or semicolons, and headings have no trailing colon. Verbatim quotations and technical syntax retain their punctuation.
+- Sentences remain readable after compression, with clearly assigned numbers and few slash-packed lists.
+- Bolding, quotes, math, and table conventions align across sections.
+- Table and Section references are grammatical parts of sentences, with consistent reference forms.
 
-Check repeated values only for presentation consistency:
+## Openings and closings
 
-- same value uses the same unit and precision;
-- success rates consistently include or omit `%` in equivalent tables;
-- changes are consistently labeled `%`, `percentage points`, `points`, or `pp`;
-- plus/minus signs, decimals, and ranges follow one convention.
+Read parallel boundaries together.
 
-Do not recompute results or judge the underlying statistics.
+- Reviewer-level thanks refer to the reviewer's actual focus and have proportionate warmth.
+- A title, preview, and first answer each contribute useful information.
+- An edited boundary fits its unchanged neighbors.
+- Final sentences interpret a result, name a specific revision, or make a useful bridge.
+- Repeated gratitude, generic assurances, and automatic self-weakening appendices have been trimmed.
 
-## 3. Structure and formatting
+## Submission text and bounded edits
 
-Compare:
+Check the actual text that will be submitted against supplied character, quotation, and format requirements. Include all counted headings, spaces, greetings, and line breaks. For a limited edit, inspect the diff against the agreed editable span.
 
-- reviewer-level heading depth;
-- W/Q/A order and numbering;
-- blockquote, bolding, separator, table, and math style;
-- figure, table, section, reviewer, and answer references;
-- answer-first formatting, including whether only `A1` or the whole first sentence is bold.
+When asked for a consistency report, give observable variants, their reviewer or line locations, and a proposed correction. If the checked dimensions align, say so briefly.
 
-The goal is a shared visual grammar, not identical response lengths.
-
-## 4. Openings
-
-Place all reviewer-level openings together, then all answer openings together.
-
-Check:
-
-- comparable warmth and gratitude density across reviewers;
-- reviewer-specific focus rather than copied generic praise;
-- no opening repeats the fixed sentence immediately after it;
-- adjacent answers vary by rhetorical job, not just synonyms.
-
-Do not standardize away useful reviewer specificity.
-
-## 5. Closings
-
-Place all answer-final sentences together.
-
-Check:
-
-- one reviewer does not end every answer with `We will...` while others end on implications;
-- repeated revision closings name specific actions when retained;
-- a closing does not restate the result immediately before it;
-- comparable answers use compatible reference and revision conventions.
-
-There is no required limitation sentence and no required caveat.
-
-## 6. Output
-
-Report only observable cross-review inconsistencies. For each item, state:
-
-1. the two or more variants;
-2. their reviewer sections or line locations;
-3. one proposed canonical form or a note that the distinction should be defined.
-
-Avoid general quality scores, risk labels, readiness verdicts, or evidence judgments. If no inconsistency is found, say that the checked dimensions are internally aligned; do not infer broader correctness.
-
-Optional helper:
+## Optional Markdown helper
 
 ```bash
 python3 scripts/audit_rebuttal.py DRAFT.md
 python3 scripts/audit_rebuttal.py DRAFT.md --json
+python3 scripts/audit_rebuttal.py DRAFT.md --term-group 'baseline=Method A|Baseline A'
 ```
 
-Treat its output as leads for a side-by-side read, not as a gate.
+The helper extracts Markdown reviewer profiles and possible presentation mismatches. Confirm its leads in context. Read punctuation, argument flow, quotation fidelity, and submission format manually.

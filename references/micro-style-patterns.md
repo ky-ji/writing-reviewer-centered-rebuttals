@@ -1,278 +1,147 @@
-# Micro-Style Patterns for Rebuttal Openings, Closings, and Local Edits
+# Micro-Style Patterns for Rebuttal Prose
 
-Use this reference when the requested change is small but repeated across reviewer sections. The central trick is to give each boundary sentence one job, then compare equivalent boundaries side by side.
+Examples below are schematic. Use the actual supplied facts and the user's current template.
 
-## 1. Sentence jobs
+## 1. Punctuation and readable sentences
 
-Label each sentence before revising it:
+As this author's default, write new rebuttal prose without colons or semicolons, including trailing colons in headings. Preserve reviewer quotations verbatim and keep punctuation required by technical syntax. Use periods for separate claims and ordinary conjunctions for closely related ideas. Treat this as a writing convention, with the current user's explicit instructions taking precedence.
 
-| Job | What it should do |
+| Dense wording | Readable revision |
 |---|---|
-| Reviewer-level thanks | Name the reviewer's actual focus |
-| Section preview | Group the main response themes |
-| Direct answer | State the conclusion immediately |
-| Context | Explain why the result or clarification is relevant |
-| Result | Present the decisive supplied fact |
-| Implication | Connect that fact to this concern |
+| The components have different roles: A predicts; B acts. | The components have different roles. A predicts the future observation, and B uses it to choose actions. |
+| W1. Added control: | W1. Added control |
+| Success rises: [before] to [after]; all else is fixed. | With the remaining conditions fixed, success rises from [before] to [after]. |
+
+Prefer `and` or the established `&` convention to slash-packed prose. Make each number's referent visible.
+
+```text
+Across [number] trials per method, Method A achieves [a]% success and Method B achieves [b]%.
+```
+
+Separate rates, trial counts, and durations into readable clauses or a table when space allows. Preserve the meaning of percentages and percentage-point differences when changing presentation. Keep meaningful distinctions between task-weighted and group-weighted averages.
+
+## 2. Give each sentence a main job
+
+| Job | Purpose |
+|---|---|
+| Opening | Orient the reviewer and acknowledge their actual focus |
+| Answer | State the conclusion immediately |
+| Mechanism | Explain how the design addresses the question |
+| Result | Give the decisive supplied fact |
+| Implication | Explain why that fact matters here |
 | Revision | Name the manuscript object and action |
-| Bridge | Point to a distinct answer without duplicating it |
+| Bridge | Locate a distinct complementary answer |
 
-If two adjacent sentences have the same job and content, delete or merge one.
+When neighboring sentences repeat the same content, combine them or give one a different job. Keep a short explanation between a compact claim and unfamiliar technical detail.
 
-## 2. Reviewer-level openings
-
-Useful patterns:
-
-```text
-We thank the reviewer for focusing on [specific theme]. Below we clarify [issue] and report [result or addition].
-```
-
-```text
-The review highlights two central questions: [theme 1] and [theme 2]. We address them in turn below.
-```
-
-```text
-We appreciate the reviewer's close reading of [specific component]. The responses below separate [distinction] and add [requested comparison].
-```
-
-Normalize **structure and warmth**, not exact wording. One reviewer may warrant a more detailed opening, but avoid accidental imbalances such as:
-
-- `Thank you.` for R1 versus four stacked praise phrases for R3;
-- a one-sentence preview for R1/R2 versus a full response summary for R3;
-- generic `valuable feedback` repeated for every reviewer.
-
-After drafting an opening, compare it with the first fixed sentence of the first answer. Remove any repeated concern list, setup, or result.
-
-## 3. Answer openings
-
-Choose the opening by rhetorical job.
+## 3. Lead with the answer
 
 ### Direct conclusion
 
 ```text
-Yes—the added comparison shows [conclusion].
+The added control isolates the contribution of the visual input. The policy and execution schedule remain fixed while [input] changes.
 ```
 
-```text
-The two components serve different roles: [X] handles ..., whereas [Y] handles ....
-```
-
-### Clarification
+### Mechanism
 
 ```text
-The current wording conflates [A] with [B]; the intended distinction is ....
-```
-
-```text
-Here, [term] refers specifically to ..., not ....
-```
-
-### New analysis or comparison
-
-```text
-We added the requested comparison under [plain-language setting].
-```
-
-```text
-To answer this question directly, we evaluated ....
+The model uses [available information] to predict [relevant change]. This supplies [the information needed by the downstream component].
 ```
 
 ### Design rationale
 
 ```text
-This design is intended to [purpose], while [other component] provides ....
+The design preserves the existing input interface. This lets [the intended user or component] use [the capability] with [the supplied compatibility condition].
 ```
 
-Do not force gratitude into every answer opening. Reviewer-level thanks can carry the social function; local openings should usually carry the answer.
-
-## 4. Result and implication pairs
-
-Keep results and interpretation adjacent:
+### Correction
 
 ```text
-The method improves success from 41.2% to 57.8% under the same camera shift. This directly supports the robustness benefit asked about in W2.
+We agree that the definition should be explicit. We will define [term] where it first appears in the method section.
+```
+
+Choose openings by rhetorical function. A list of every experiment performed usually delays the answer. Reviewer-level gratitude can carry the social function, leaving local openings free to carry substance.
+
+## 4. Keep results and meaning adjacent
+
+```text
+Under the same evaluation setting, success increases from [before]% to [after]%. Changing [the controlled component] therefore accounts for [the supported interpretation].
+```
+
+Use the actual comparison and units. When two results concern different settings, name those settings before relating them. This keeps a strong conclusion precise and easy to assess.
+
+## 5. Write useful titles and gratitude
+
+A reviewer-level title can summarize the main completed additions and clarifications.
+
+```text
+Added Control Experiments and Expanded Comparisons
+```
+
+A brief opening can acknowledge what this reviewer actually recognized.
+
+```text
+Dear reviewer, thank you for recognizing [specific contribution].
+```
+
+Use the established salutation and level of formality. Keep parallel openings comparable in warmth and length. Remove a preview when the title and first answer already provide the same information.
+
+## 6. End on the result's meaning or the revision
+
+```text
+This comparison demonstrates [the supported answer to this concern].
 ```
 
 ```text
-Across the seven perturbations, the average gain is 12.4 percentage points. Thus, the improvement is not confined to a single view.
-```
-
-Use the units and claim strength already chosen by the authors. A prose pass should not automatically convert `demonstrates` to `suggests`, or add `may`, `preliminary`, `within this setup`, or a limitation sentence.
-
-## 5. Answer closings
-
-Select one useful ending.
-
-### End on meaning
-
-```text
-Together, these results demonstrate that robot-centered supervision improves robustness.
+We will add the comparison to Table 3 and define the setting in its caption.
 ```
 
 ```text
-This distinction explains why the two modules are complementary rather than redundant.
+The complementary control is reported in R2-A3.
 ```
 
-### End on the exact revision
+Choose one useful ending. Repeated assurances such as `We hope this addresses the concern` can usually be removed. Keep a future revision promise when it names a real action that helps the reader.
+
+## 7. Use the fixed-neighbor check
+
+For an opening-only edit, read the reviewer-level opening, changed opening, and first unchanged sentence together.
 
 ```text
-We will add this comparison to Table 3 and define the perturbation protocol in its caption.
+Echoing opening
+We added an evaluation under camera shifts.
+
+Fixed next sentence
+We evaluate the model under [number] camera shifts.
+
+Better opening
+The added evaluation directly tests robustness to viewpoint changes.
 ```
+
+For a closing-only edit, read the last unchanged result, changed closing, and next heading together. If the result already states the gain, let the closing explain what that gain establishes.
+
+Inspect the diff after a bounded edit. Keep the requested body and neighboring answers fixed.
+
+## 8. Compare parallel boundaries
+
+Read all reviewer openings together, followed by all answer first sentences, all final sentences, and all revision commitments. Look for repeated setup, an unusually elaborate greeting, the same first-sentence function everywhere, or mechanical revision endings.
+
+Vary the rhetorical job where the content calls for it. Preserve conventions for headings, labels, bolding, quotation style, tables, and math.
+
+## 9. Keep names, numbers, and references stable
+
+Maintain a small private terminology ledger with the canonical method, baseline, setting, metric, difference unit, averaging label, and reference style. Use project terms from the supplied material.
+
+Repeated values retain their comparison, unit, precision, and aggregation. A rate difference in percentage points keeps that meaning even when the prose is shortened. Explain a real distinction once rather than giving different objects one name.
+
+Integrate references into the sentence.
 
 ```text
-We will replace the ambiguous term throughout Sec. 3 with [canonical term].
+The added comparison is shown in Table~\ref{tab:comparison}.
+The evaluation setting is described in Section~\ref{sec:evaluation}.
 ```
 
-### End with a bridge
+Use supplied labels. Prefer these grammatical references to parenthesized Table or Section references, and keep the chosen `Section` or `Sec.` form consistent.
 
-```text
-The complementary control requested here is reported separately in R2-A3.
-```
+## 10. Read the final paragraph aloud
 
-Avoid empty or mechanical endings:
-
-```text
-We will revise accordingly.
-We hope this addresses the concern.
-We thank the reviewer again.
-```
-
-These phrases are not forbidden; they simply add little when repeated. If several answers end with `We will...`, retain it only where the revision is the main takeaway.
-
-## 6. The fixed-neighbor trick
-
-For a boundary-only edit, never judge the new sentence alone.
-
-### Editing an opening
-
-Read:
-
-1. reviewer-level opening;
-2. new answer opening;
-3. first unchanged body sentence.
-
-Typical echo:
-
-```text
-New opening: We added an evaluation under camera perturbations.
-Fixed next sentence: We evaluate the model under seven camera perturbations.
-```
-
-Better:
-
-```text
-New opening: The added evaluation directly tests robustness to viewpoint changes.
-Fixed next sentence: We evaluate the model under seven camera perturbations.
-```
-
-### Editing a closing
-
-Read:
-
-1. last unchanged result sentence;
-2. new closing;
-3. next heading or answer, if any.
-
-Typical echo:
-
-```text
-Fixed previous sentence: The gain is 12.4 percentage points on average.
-New closing: These results show a 12.4-point average gain.
-```
-
-Better:
-
-```text
-New closing: This demonstrates that the benefit persists across viewpoint changes.
-```
-
-## 7. The parallel-boundary trick
-
-Extract these lines into separate lists:
-
-- all reviewer-level openings;
-- all answer first sentences;
-- all answer final sentences;
-- all revision commitments.
-
-Reading only the parallel boundaries makes patterns visible that disappear in full prose:
-
-- R3 is much warmer than R1/R2;
-- every answer begins with `We thank`;
-- one reviewer uses only bold `A1`, while another bolds the full answer sentence;
-- all R3 answers end with `We will`;
-- the same baseline receives four different names.
-
-Correct the pattern with the smallest local edits.
-
-## 8. Canonical-term trick
-
-Before the last pass, create a tiny substitution ledger:
-
-```text
-baseline: Official GR00T-N1.6
-supervision target: RVM pseudo-label
-camera condition: camera perturbation
-difference unit: percentage points
-figure reference: Fig.
-```
-
-Then scan all reviewer sections for aliases. Replace accidental variants. When two terms denote different concepts, keep them and add one explicit distinction.
-
-This ledger also applies to capitalization, hyphenation, pluralization, and abbreviations.
-
-## 9. Number-presentation trick
-
-Repeated values should retain the same visual form:
-
-- `29.5 percentage points` should not become `29.5%` elsewhere if it is a difference;
-- a success-rate column should not include `%` in R1 and omit it in the equivalent R3 table;
-- `26.4/24.7` should use the same precision and unit wherever repeated;
-- choose either `mean ± s.d.` or another supplied label and use it consistently.
-
-This is formatting normalization only. Do not recompute or reinterpret the numbers during a prose consistency pass.
-
-## 10. Heading and bolding trick
-
-Choose one local grammar and apply it across reviewer sections:
-
-```text
-**W1. [Weakness title]**
-> [quote]
-**A1. [Direct answer sentence]**
-```
-
-or:
-
-```text
-**A1.** [Direct answer sentence]
-```
-
-Either can work. The inconsistency arises when one answer bolds only the label, another bolds a full paragraph, and a third switches to `### Limitation` without a structural reason.
-
-Also align heading depth, separators, table alignment, math delimiters, and reference forms such as `Fig.` versus `Figure`.
-
-## 11. Concrete revision language
-
-Replace vague promises with object + action:
-
-| Vague | Concrete |
-|---|---|
-| We will clarify this. | We will define [term] at the start of the method section. |
-| We will revise accordingly. | We will add the comparison to Table 3. |
-| We will improve the discussion. | We will add a paragraph comparing [A] and [B]. |
-
-Do not invent a location. If no section number is supplied, name only the manuscript object.
-
-## 12. Final micro-edit pass
-
-For each changed sentence, ask:
-
-1. Does it have exactly one main job?
-2. Does it repeat a fixed neighbor?
-3. Is its warmth and length proportionate to parallel reviewer sections?
-4. Does it introduce a new term, unit, heading style, or reference form?
-5. Does it preserve the author's intended claim strength?
-6. Is the smallest necessary span changed?
-
-The goal is not to make every answer identical. It is to make differences intentional and conventions stable.
+Check whether the conclusion is clear on the first read, the sentences connect, and each technical detail helps answer the question. Trim repeated thanks, generic assurances, and self-weakening language. Retain facts and qualifications that materially affect the answer.
