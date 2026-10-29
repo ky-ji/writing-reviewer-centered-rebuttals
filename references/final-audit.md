@@ -33,7 +33,9 @@ When a visible contradiction affects the answer, identify the exact value or lab
 
 Read parallel boundaries together.
 
-- Reviewer-level thanks refer to the reviewer's actual focus and have proportionate warmth.
+- Gratitude names a concrete contribution, recognizes the reviewer's relevant expertise or careful reading, and links their guidance to an improvement in the paper.
+- Literature suggestions receive credit for research positioning, experiment suggestions for methodological improvements, and identified errors for precision and accuracy, as applicable to the actual review.
+- Reviewer-level thanks have proportionate warmth, and the wording accurately distinguishes completed improvements from planned revisions.
 - A title, preview, and first answer each contribute useful information.
 - An edited boundary fits its unchanged neighbors.
 - Final sentences interpret a result, name a specific revision, or make a useful bridge.

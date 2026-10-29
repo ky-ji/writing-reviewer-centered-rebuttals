@@ -78,13 +78,33 @@ A reviewer-level title can summarize the main completed additions and clarificat
 Added Control Experiments and Expanded Comparisons
 ```
 
-A brief opening can acknowledge what this reviewer actually recognized.
+Build gratitude from the reviewer's concrete contribution, the professional ability it reflects, and the resulting improvement to the paper. This gives them a clear role in making the work stronger. The examples below describe completed improvements. Adapt the object and tense to the actual revision.
+
+### When the reviewer suggests literature
 
 ```text
-Dear reviewer, thank you for recognizing [specific contribution].
+Thank you for highlighting these important studies. Your insightful guidance on the literature has helped us clarify how our work relates to prior research.
 ```
 
-Use the established salutation and level of formality. Keep parallel openings comparable in warmth and length. Remove a preview when the title and first answer already provide the same information.
+Recognize the reviewer's scholarly judgement and explain how the suggested literature sharpens the research positioning.
+
+### When the reviewer suggests an experiment
+
+```text
+Thank you for this insightful experimental suggestion. Your methodological guidance has helped us strengthen the experimental design and make the paper more rigorous.
+```
+
+Name the recommended comparison or analysis when space permits. Connect the reviewer's expertise to what the addition improves in the evaluation. For a planned addition, use wording such as `Your methodological guidance will help us strengthen the evaluation through the proposed comparison.`
+
+### When the reviewer identifies an error
+
+```text
+Thank you for your sharp observation and careful review. Your comment helped us correct the definition and make the presentation more precise.
+```
+
+Name the actual correction so the recognition has substance. Acknowledge the reviewer's perceptiveness and attention to detail, then move directly to the correction or answer.
+
+Use the established salutation and level of formality. Keep recognition sincere and proportional to the actual comment. Match parallel openings in warmth and length while preserving the specific contribution. One well-placed acknowledgment can carry this function for a response. Remove a preview when the title and first answer already provide the same information.
 
 ## 6. End on the result's meaning or the revision
 

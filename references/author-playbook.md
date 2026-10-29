@@ -56,13 +56,11 @@ For an AC or meta-review response, organize around the concerns that matter to t
 
 A response title should summarize what the reply contributes, such as an added control, expanded comparison, or clarified design. Prefer a concrete title over a generic promise to clarify everything. Keep its length proportionate to the document.
 
-Keep the reviewer-level opening brief. Connect gratitude to a contribution or issue the reviewer actually recognized. A short preview is useful when it adds orientation beyond the title and first answer.
+Give the reviewer specific credit for helping improve the paper. Link a concrete suggestion or observation to the relevant professional ability, then explain how their guidance strengthens the work. Literature suggestions can show scholarly judgement and help sharpen research positioning. Experiment suggestions can show methodological expertise and improve the experimental design. Identified errors can show perceptiveness and careful reading and help make the paper more accurate.
 
-```text
-Dear reviewer, thank you for recognizing the practical motivation and systems design.
-```
+This frames the reviewer as an expert collaborator guiding the paper's development and keeps the exchange centered on improving the manuscript. A bare `Thank you` leaves that contribution unstated. Use concise, proportionate recognition grounded in the actual review, followed by the substantive answer. Describe an improvement as completed only when it has been made, and use future wording for a planned revision.
 
-Use `Dear reviewer` when it fits the established template. Match the warmth and length across reviewers while preserving their individual focus.
+See the three English examples in [micro-style-patterns.md](micro-style-patterns.md#5-write-useful-titles-and-gratitude). Use `Dear reviewer` when it fits the established template. Match the warmth and length across reviewers while preserving their individual focus. Place meaningful gratitude at the appropriate response level and keep each answer's main point visible. A short preview is useful when it adds orientation beyond the title and first answer.
 
 An answer heading should name its topic in plain language. Keep original concern labels and omit a trailing colon. Use the chosen connector consistently when grouping labels, for example `W1 & Q2`.
 
